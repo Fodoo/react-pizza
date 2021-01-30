@@ -25,11 +25,7 @@ function SortPopup({ items }) {
   }, []);
 
   return (
-    <div
-      ref={(ref) => {
-        sortRef.current = ref;
-      }}
-      className="sort">
+    <div ref={sortRef} className="sort">
       <div className="sort__label">
         <svg
           className={visiblePopup ? 'rotated' : ''}
