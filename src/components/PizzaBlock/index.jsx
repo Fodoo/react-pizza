@@ -73,6 +73,11 @@ function PizzaBlock({ name, imageUrl, price, types, sizes }) {
 PizzaBlock.propTypes = {
   name: PropTypes.string,
   types: PropTypes.arrayOf(PropTypes.number).isRequired,
+  isLoading: PropTypes.bool,
+};
+
+PizzaBlock.defaultProps = {
+  isLoading: false,
 };
 
 export default PizzaBlock;
